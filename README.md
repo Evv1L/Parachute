@@ -1,6 +1,6 @@
-# Parachute
+# Parachute (fixed for Plasma 5.23)
 
-## This project is paused. Feel free to fork it if you want to improve it
+## Original project is paused. It's just a fork with fix for Plasma 2.23. Nothing else. 
 
 <p align="center">
   <img src="parachute.svg">
@@ -15,7 +15,7 @@ This *KWin* script was inspired by the excellent work of several projects like: 
 ## Installation or upgrade
 
   ```
-  git clone https://github.com/tcorreabr/Parachute.git && cd Parachute
+  git clone https://github.com/Evv1L/Parachute.git && cd Parachute
   make install
   ```
 
