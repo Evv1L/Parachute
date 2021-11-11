@@ -14,6 +14,7 @@ After activate the script in *KWin Scripts* window you can use the default regis
 ![](parachute.png)
 
 ## Installation or upgrade
+**Make sure you have lastest updates on distros like KDE neon and Arch**
 
   ```
   git clone https://github.com/Evv1L/Parachute.git && cd Parachute
@@ -45,7 +46,7 @@ To uninstall, first go to the folder where you cloned Parachute, then run:
 kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.kglobalaccel,/component/kwin,org.kde.kglobalaccel.Component,invokeShortcut,Parachute"
 qdbus org.kde.KWin /KWin reconfigure
 ```
-If it doesn't work try to restart KWin with `kwin_x11 --replace`. Installing lastest updates (on KDE neon and Arch) can also help.
+If it doesn't work try to restart KWin with `kwin_x11 --replace`.
 
 
 <br>
