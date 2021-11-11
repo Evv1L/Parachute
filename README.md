@@ -45,7 +45,7 @@ To uninstall, first go to the folder where you cloned Parachute, then run:
 kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.kglobalaccel,/component/kwin,org.kde.kglobalaccel.Component,invokeShortcut,Parachute"
 qdbus org.kde.KWin /KWin reconfigure
 ```
-If it doesn't work try to restart KWin with `kwin_x11 --replace`
+If it doesn't work try to restart KWin with `kwin_x11 --replace`. Installing lastest updates (on KDE neon and Arch) can also help.
 
 
 <br>
