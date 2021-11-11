@@ -1,6 +1,7 @@
 # Parachute (fixed for Plasma 5.23)
 
 ## Original project is paused. It's just a fork with fix for Plasma 2.23. Nothing else. 
+Thanks to this guy for fix: https://github.com/tcorreabr/Parachute/issues/125#issuecomment-956075375
 
 <p align="center">
   <img src="parachute.svg">
