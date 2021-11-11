@@ -22,7 +22,7 @@ After activate the script in *KWin Scripts* window you can use the default regis
  ### Errors
 If you have installed Parachute before and get "File exists" or "MakeFile Error 1" delete this file:
 ```
-rm ~/.local/share/kservices5/Parachute.desk
+rm ~/.local/share/kservices5/Parachute.desktop
 ```
 
 If you have installed through Plasma's Get Hot New Stuff ([Kde Store](https://store.kde.org/p/1370195/)) you must execute the following commands on terminal to install the configuration dialog. You only need to do this once.
