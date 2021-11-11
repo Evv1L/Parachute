@@ -7,8 +7,8 @@
 </p>
 
 Look at your windows and desktops from above.
-
-This *KWin* script was inspired by the excellent work of several projects like: [KWin (Present Windows and Desktop Grid effects)](https://github.com/KDE/kwin), [kwinOverview](https://github.com/astatide/kwinOverview), [qOverview](https://gitlab.com/bharadwaj-raju/QOverview), [Gnome](https://www.gnome.org/), [Deepin](https://www.deepin.org/).
+### Usage
+After activate the script in *KWin Scripts* window you can use the default registered global shortcut **Ctrl+Super+D (Ctrl+Meta+D)** to show/hide *Parachute*.
 
 ![](parachute.png)
 
@@ -18,6 +18,9 @@ This *KWin* script was inspired by the excellent work of several projects like: 
   git clone https://github.com/Evv1L/Parachute.git && cd Parachute
   make install
   ```
+ This fork have custom version for script - v0.9.1.1
+ ### Errors
+(If you have installed Parachute before and get "File exists" or "MakeFile Error 1" delete this file: `rm ~/.local/share/kservices5/Parachute.desk`)
 
 If you have installed through Plasma's Get Hot New Stuff ([Kde Store](https://store.kde.org/p/1370195/)) you must execute the following commands on terminal to install the configuration dialog. You only need to do this once.
 
@@ -26,19 +29,25 @@ If you have installed through Plasma's Get Hot New Stuff ([Kde Store](https://st
   ln -s ~/.local/share/kwin/scripts/Parachute/metadata.desktop ~/.local/share/kservices5/Parachute.desktop
   ```
 
+### Uninstall
 To uninstall, first go to the folder where you cloned Parachute, then run:
 
   ```
   make uninstall
   ```
 
-## Usage
+## Run Parachute with Meta key
+```
+kwriteconfig5 --file ~/.config/kwinrc --group ModifierOnlyShortcuts --key Meta "org.kde.kglobalaccel,/component/kwin,org.kde.kglobalaccel.Component,invokeShortcut,Parachute"
+qdbus org.kde.KWin /KWin reconfigure
+```
+If it doesn't work try to restart KWin with `kwin_x11 --replace`
 
-After activate the script in *KWin Scripts* window you can use the default registered global shortcut **Ctrl+Super+D (Ctrl+Meta+D)** to show/hide *Parachute*.
-  
-You can also invoke the script with: *qdbus org.kde.kglobalaccel /component/kwin invokeShortcut Parachute*. Similarly you can: integrate it with [easystroke](https://github.com/thjaeger/easystroke), [configure it to be invoked with meta key](https://github.com/tcorreabr/Parachute/issues/30), etc.
 
-Controls:
+<br>
+<br>
+
+## Controls:
 * Left mouse button - Activate window.
 * Middle mouse button - Close window.
 * Right mouse button - (Un)pin window.
